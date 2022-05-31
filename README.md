@@ -1,10 +1,10 @@
 # slog
 
 ![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/gookit/slog?style=flat-square)
-[![GoDoc](https://godoc.org/github.com/gookit/slog?status.svg)](https://pkg.go.dev/github.com/gookit/slog)
-[![Go Report Card](https://goreportcard.com/badge/github.com/gookit/slog)](https://goreportcard.com/report/github.com/gookit/slog)
-[![Unit-Tests](https://github.com/gookit/slog/workflows/Unit-Tests/badge.svg)](https://github.com/gookit/slog/actions)
-[![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/gookit/slog)](https://github.com/gookit/slog)
+[![GoDoc](https://godoc.org/github.com/maintell/slog?status.svg)](https://pkg.go.dev/github.com/maintell/slog)
+[![Go Report Card](https://goreportcard.com/badge/github.com/maintell/slog)](https://goreportcard.com/report/github.com/maintell/slog)
+[![Unit-Tests](https://github.com/maintell/slog/workflows/Unit-Tests/badge.svg)](https://github.com/maintell/slog/actions)
+[![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/gookit/slog)](https://github.com/maintell/slog)
 [![Coverage Status](https://coveralls.io/repos/github/gookit/slog/badge.svg?branch=master)](https://coveralls.io/github/gookit/slog?branch=master)
 
 📑 Lightweight, extensible, configurable logging library written in Golang.
@@ -42,12 +42,12 @@
 
 ## GoDoc
 
-- [Godoc for github](https://pkg.go.dev/github.com/gookit/slog?tab=doc)
+- [Godoc for github](https://pkg.go.dev/github.com/maintell/slog?tab=doc)
 
 ## Install
 
 ```bash
-go get github.com/gookit/slog
+go get github.com/maintell/slog
 ```
 
 ## Quick Start
@@ -58,7 +58,7 @@ go get github.com/gookit/slog
 package main
 
 import (
-	"github.com/gookit/slog"
+	"github.com/maintell/slog"
 )
 
 func main() {
@@ -86,7 +86,7 @@ You can enable color on output logs to console. _This is default_
 package main
 
 import (
-	"github.com/gookit/slog"
+	"github.com/maintell/slog"
 )
 
 func main() {
@@ -143,7 +143,7 @@ h.GetFormatter().(*slog.TextFormatter).SetTemplate(slog.NamedTemplate)
 package main
 
 import (
-	"github.com/gookit/slog"
+	"github.com/maintell/slog"
 )
 
 func main() {
@@ -354,8 +354,8 @@ l.AddHandlers(h1)
 package main
 
 import (
-	"github.com/gookit/slog"
-	"github.com/gookit/slog/handler"
+	"github.com/maintell/slog"
+	"github.com/maintell/slog/handler"
 )
 
 func main() {
@@ -449,8 +449,8 @@ Output log to the specified file, `buffer` buffered writing is not enabled by de
 package mypkg
 
 import (
-	"github.com/gookit/slog"
-	"github.com/gookit/slog/handler"
+	"github.com/maintell/slog"
+	"github.com/maintell/slog/handler"
 )
 
 func main() {
@@ -606,7 +606,7 @@ ok      command-line-arguments  146.669s
   - [gookit/ini](https://github.com/gookit/ini) Go config management, use INI files
   - [gookit/rux](https://github.com/gookit/rux) Simple and fast request router for golang HTTP 
   - [gookit/gcli](https://github.com/gookit/gcli) Build CLI application, tool library, running CLI commands
-  - [gookit/slog](https://github.com/gookit/slog) Lightweight, extensible, configurable logging library written in Go
+  - [gookit/slog](https://github.com/maintell/slog) Lightweight, extensible, configurable logging library written in Go
   - [gookit/color](https://github.com/gookit/color) A command-line color library with true color support, universal API methods and Windows support
   - [gookit/event](https://github.com/gookit/event) Lightweight event manager and dispatcher implements by Go
   - [gookit/cache](https://github.com/gookit/cache) Generic cache use and cache manager for golang. support File, Memory, Redis, Memcached.

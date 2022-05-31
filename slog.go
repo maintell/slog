@@ -3,14 +3,14 @@ Package slog Lightweight, extensible, configurable logging library written in Go
 
 Source code and other details for the project are available at GitHub:
 
-	https://github.com/gookit/slog
+	https://github.com/maintell/slog
 
 Quick usage:
 
 	package main
 
 	import (
-		"github.com/gookit/slog"
+		"github.com/maintell/slog"
 	)
 
 	func main() {

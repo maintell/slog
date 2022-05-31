@@ -5,8 +5,8 @@ import (
 	"testing"
 
 	"github.com/gookit/goutil/dump"
-	"github.com/gookit/slog"
-	"github.com/gookit/slog/handler"
+	"github.com/maintell/slog"
+	"github.com/maintell/slog/handler"
 )
 
 // go test -v -cpu=4 -run=none -bench=. -benchtime=10s -benchmem bench_test.go

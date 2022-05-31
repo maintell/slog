@@ -5,7 +5,7 @@ import (
 
 	"github.com/gookit/goutil/dump"
 	"github.com/gookit/goutil/fsutil"
-	"github.com/gookit/slog/rotatefile"
+	"github.com/maintell/slog/rotatefile"
 	"github.com/stretchr/testify/assert"
 )
 

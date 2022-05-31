@@ -3,8 +3,8 @@ package handler
 import (
 	"io"
 
-	"github.com/gookit/slog"
-	"github.com/gookit/slog/bufwrite"
+	"github.com/maintell/slog"
+	"github.com/maintell/slog/bufwrite"
 )
 
 // FormatterWriterHandler interface

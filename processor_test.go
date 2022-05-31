@@ -6,7 +6,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/gookit/slog"
+	"github.com/maintell/slog"
 	"github.com/stretchr/testify/assert"
 )
 

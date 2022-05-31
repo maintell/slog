@@ -5,8 +5,8 @@ import (
 	"testing"
 
 	"github.com/gookit/goutil/dump"
-	"github.com/gookit/slog"
-	"github.com/gookit/slog/handler"
+	"github.com/maintell/slog"
+	"github.com/maintell/slog/handler"
 	"github.com/stretchr/testify/assert"
 )
 

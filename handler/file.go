@@ -1,7 +1,7 @@
 package handler
 
 import (
-	"github.com/gookit/slog"
+	"github.com/maintell/slog"
 )
 
 // MustFileHandler create file handler

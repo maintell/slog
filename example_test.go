@@ -1,8 +1,8 @@
 package slog_test
 
 import (
-	"github.com/gookit/slog"
-	"github.com/gookit/slog/handler"
+	"github.com/maintell/slog"
+	"github.com/maintell/slog/handler"
 )
 
 func Example_quickStart() {

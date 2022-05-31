@@ -4,8 +4,8 @@ import (
 	"io"
 	"os"
 
-	"github.com/gookit/slog"
-	"github.com/gookit/slog/bufwrite"
+	"github.com/maintell/slog"
+	"github.com/maintell/slog/bufwrite"
 )
 
 // NewBuffered create new BufferedHandler

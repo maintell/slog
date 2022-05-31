@@ -4,11 +4,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gookit/slog"
-	"github.com/gookit/slog/handler"
+	"github.com/maintell/slog"
+	"github.com/maintell/slog/handler"
 )
 
-// https://github.com/gookit/slog/issues/27
+// https://github.com/maintell/slog/issues/27
 func TestIssues_27(t *testing.T) {
 	defer slog.Reset()
 
@@ -23,7 +23,7 @@ func TestIssues_27(t *testing.T) {
 	}
 }
 
-// https://github.com/gookit/slog/issues/31
+// https://github.com/maintell/slog/issues/31
 func TestIssues_31(t *testing.T) {
 	defer slog.Reset()
 	defer slog.MustFlush()
@@ -42,7 +42,7 @@ func TestIssues_31(t *testing.T) {
 	slog.Error("error message text")
 }
 
-// https://github.com/gookit/slog/issues/52
+// https://github.com/maintell/slog/issues/52
 func TestIssues_52(t *testing.T) {
 	testTemplate := "[{{datetime}}] [{{level}}] {{message}} {{data}} {{extra}}"
 	slog.SetLogLevel(slog.ErrorLevel)

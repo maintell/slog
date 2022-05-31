@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/gookit/goutil/fsutil"
-	"github.com/gookit/slog/handler"
+	"github.com/maintell/slog/handler"
 	"github.com/stretchr/testify/assert"
 )
 

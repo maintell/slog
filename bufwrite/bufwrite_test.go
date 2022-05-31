@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/gookit/slog/bufwrite"
+	"github.com/maintell/slog/bufwrite"
 	"github.com/stretchr/testify/assert"
 )
 

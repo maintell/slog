@@ -51,7 +51,7 @@ func getCaller(callerSkip int) (fr runtime.Frame, ok bool) {
 func formatCaller(rf *runtime.Frame, flag uint8) (cs string) {
 	switch flag {
 	case CallerFlagFull:
-		// eg: "github.com/gookit/slog_test.TestLogger_ReportCaller,logger_test.go:48"
+		// eg: "github.com/maintell/slog_test.TestLogger_ReportCaller,logger_test.go:48"
 		return rf.Function + "," + path.Base(rf.File) + ":" + strconv.FormatInt(int64(rf.Line), 10)
 	case CallerFlagFunc:
 		return rf.Function

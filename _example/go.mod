@@ -4,7 +4,7 @@ go 1.17
 
 require (
 	github.com/golang/glog v1.0.0
-	github.com/gookit/slog v0.3.1
+	github.com/maintell/slog v0.3.1
 	github.com/phuslu/log v1.0.67
 	github.com/rs/zerolog v1.26.1
 	github.com/sirupsen/logrus v1.8.1
@@ -24,4 +24,4 @@ require (
 	golang.org/x/sys v0.0.0-20220520151302-bc2c85ada10a // indirect
 )
 
-replace github.com/gookit/slog => ../
+replace github.com/maintell/slog => ../

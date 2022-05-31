@@ -148,11 +148,15 @@ type Config struct {
 	//
 	// default see DefaultMaxSize
 	MaxSize uint64 `json:"max_size" yaml:"max_size"`
+
+	// OnlyTimeFileName is just ignore any filename only use time
+	OnlyTimeFileName bool `json:"only_time_file_name" yaml:"only_time_file_name"`
+
 	// RotateTime the file rotate interval time, unit is seconds.
 	// If is equals zero, disable rotate file by time
-	//
 	// default see EveryHour
 	RotateTime RotateTime `json:"rotate_time" yaml:"rotate_time"`
+
 	// CloseLock use sync lock on write contents, rotating file.
 	//
 	// default: false
@@ -200,7 +204,7 @@ const (
 	OneMByte uint64 = 1024 * 1024
 
 	// DefaultMaxSize of a log file. default is 20M.
-	DefaultMaxSize = 20 * OneMByte
+	DefaultMaxSize = 2000 * OneMByte
 	// DefaultBackNum default backup numbers for old files.
 	DefaultBackNum uint = 20
 	// DefaultBackTime default backup time for old files. default keep a week.
@@ -234,6 +238,7 @@ func NewDefaultConfig() *Config {
 		BackupNum:  DefaultBackNum,
 		BackupTime: DefaultBackTime,
 		RotateTime: EveryHour,
+		OnlyTimeFileName : true,
 		RenameFunc: DefaultFilenameFn,
 		TimeClock:  DefaultTimeClockFn,
 	}

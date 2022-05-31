@@ -1,6 +1,11 @@
 package main
 
-import "github.com/maintell/slog"
+import (
+	"fmt"
+	"github.com/maintell/slog"
+	"os"
+	"path/filepath"
+)
 
 // profile run:
 //
@@ -25,8 +30,20 @@ func stackIt2() *int {
 }
 
 func slogTest() {
+	ex, _ := os.Executable()
+	exPath := filepath.Dir(ex)
+	fmt.Println(exPath)
+	LogPath := filepath.Join(exPath, "log")
+	os.MkdirAll(LogPath, os.ModePerm)
+	//h2 := handler.MustRotateFile("log/test.log", handler.EveryDay, handler.WithBuffSize(1024))
+	//slog.PushHandler(h2)
+
 	var msg = "The quick brown fox jumps over the lazy dog"
 
+	slog.Info("rate", "15", "low", 16, "high", 123.2, msg)
+	slog.Info("rate", "15", "low", 16, "high", 123.2, msg)
+	slog.Info("rate", "15", "low", 16, "high", 123.2, msg)
+	slog.Info("rate", "15", "low", 16, "high", 123.2, msg)
 	slog.Info("rate", "15", "low", 16, "high", 123.2, msg)
 	// slog.WithFields(slog.M{
 	// 	"omg":    true,

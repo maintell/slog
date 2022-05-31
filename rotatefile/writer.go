@@ -51,6 +51,16 @@ func NewWriterWith(fns ...ConfigFn) (*Writer, error) {
 
 // init rotate dispatcher
 func (d *Writer) init() error {
+	d.suffixFormat = d.cfg.RotateTime.TimeFormat()
+	d.checkInterval = d.cfg.RotateTime.Interval()
+
+	if d.cfg.OnlyTimeFileName {
+		absPath, _ := filepath.Abs(d.cfg.Filepath)
+		filesuffix := path.Ext(absPath)
+		Onlypath, _ := filepath.Split(absPath)
+		timeString := d.cfg.TimeClock.Now().Format(d.suffixFormat)
+		d.cfg.Filepath = filepath.Join(Onlypath,timeString + filesuffix)
+	}
 	d.fileDir = path.Dir(d.cfg.Filepath)
 	d.backupDur = d.cfg.backupDuration()
 
@@ -64,8 +74,7 @@ func (d *Writer) init() error {
 		return err
 	}
 
-	d.suffixFormat = d.cfg.RotateTime.TimeFormat()
-	d.checkInterval = d.cfg.RotateTime.Interval()
+
 
 	// calc and storage next rotating time
 	if d.checkInterval > 0 {
@@ -229,6 +238,15 @@ func (d *Writer) rotatingByTime() error {
 	// rename current to new file.
 	// eg: /tmp/error.log => /tmp/error.log.20220423_1600
 	newFilepath := d.cfg.Filepath + "." + now.Format(d.suffixFormat)
+
+
+	if d.cfg.OnlyTimeFileName {
+		absPath, _ := filepath.Abs(d.cfg.Filepath)
+		filesuffix := path.Ext(absPath)
+		Onlypath, _ := filepath.Split(absPath)
+		timeString := d.cfg.TimeClock.Now().Format(d.suffixFormat)
+		newFilepath = filepath.Join(Onlypath,timeString +"."+ filesuffix)
+	}
 
 	err := d.rotatingFile(newFilepath)
 

@@ -1,6 +1,8 @@
 package rotatefile_test
 
 import (
+	"github.com/maintell/slog"
+	"github.com/maintell/slog/handler"
 	"testing"
 
 	"github.com/gookit/goutil/dump"
@@ -24,21 +26,13 @@ func TestNewWriter(t *testing.T) {
 	testFile := "testdata/test.log"
 	assert.NoError(t, fsutil.DeleteIfExist(testFile))
 
-	wr, err := rotatefile.NewConfig(testFile).Create()
-	if err != nil {
-		return
-	}
+	h2 := handler.MustRotateFile("testdata/test.log", handler.EveryDay, handler.WithBuffSize(1024))
+	slog.PushHandler(h2)
 
-	c := wr.Config()
-	assert.Equal(t, c.MaxSize, rotatefile.DefaultMaxSize)
+	slog.Print("fsfasdfsdafsafsdafasdf")
+	slog.Print("fsfasdfsdafsafsdafasdf")
+	slog.Print("fsfasdfsdafsafsdafasdf")
+	slog.Print("fsfasdfsdafsafsdafasdf")
 
-	w, err := c.Create()
-	assert.NoError(t, err)
 
-	_, err = w.WriteString("info log message\n")
-	assert.NoError(t, err)
-	assert.True(t, fsutil.IsFile(testFile))
-
-	assert.NoError(t, w.Flush())
-	assert.NoError(t, w.Close())
 }

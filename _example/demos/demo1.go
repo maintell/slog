@@ -1,7 +1,7 @@
 package main
 
 import (
-	log "github.com/gookit/slog"
+	log "github.com/maintell/slog"
 )
 
 const simplestTemplate = "[{{datetime}}] [{{level}}] {{message}} {{data}} {{extra}}"

@@ -11,12 +11,12 @@ import (
 	"github.com/gookit/goutil/fsutil"
 	"github.com/gookit/goutil/testutil/assert"
 	"github.com/gookit/goutil/timex"
-	"github.com/gookit/slog"
-	"github.com/gookit/slog/handler"
-	"github.com/gookit/slog/rotatefile"
+	"github.com/maintell/slog"
+	"github.com/maintell/slog/handler"
+	"github.com/maintell/slog/rotatefile"
 )
 
-// https://github.com/gookit/slog/issues/27
+// https://github.com/maintell/slog/issues/27
 func TestIssues_27(t *testing.T) {
 	defer slog.Reset()
 
@@ -31,7 +31,7 @@ func TestIssues_27(t *testing.T) {
 	}
 }
 
-// https://github.com/gookit/slog/issues/31
+// https://github.com/maintell/slog/issues/31
 func TestIssues_31(t *testing.T) {
 	defer slog.Reset()
 	defer slog.MustClose()
@@ -50,7 +50,7 @@ func TestIssues_31(t *testing.T) {
 	slog.Error("error message text")
 }
 
-// https://github.com/gookit/slog/issues/52
+// https://github.com/maintell/slog/issues/52
 func TestIssues_52(t *testing.T) {
 	testTemplate := "[{{datetime}}] [{{level}}] {{message}} {{data}} {{extra}}"
 	slog.SetLogLevel(slog.ErrorLevel)
@@ -63,7 +63,7 @@ func TestIssues_52(t *testing.T) {
 	// dump.P(slog.GetFormatter())
 }
 
-// https://github.com/gookit/slog/issues/75
+// https://github.com/maintell/slog/issues/75
 func TestIssues_75(t *testing.T) {
 	slog.Error("Error message 1")
 
@@ -75,7 +75,7 @@ func TestIssues_75(t *testing.T) {
 	// dump.P(slog.GetFormatter())
 }
 
-// https://github.com/gookit/slog/issues/105
+// https://github.com/maintell/slog/issues/105
 func TestIssues_105(t *testing.T) {
 	t.Run("simple write", func(t *testing.T) {
 		for i := 0; i < 10; i++ {
@@ -99,7 +99,7 @@ func TestIssues_105(t *testing.T) {
 	})
 }
 
-// https://github.com/gookit/slog/issues/108
+// https://github.com/maintell/slog/issues/108
 func TestIssues_108(t *testing.T) {
 	buf1 := byteutil.NewBuffer()
 	root := slog.NewWithName("root", func(l *slog.Logger) {
@@ -128,7 +128,7 @@ func TestIssues_108(t *testing.T) {
 	assert.StrContains(t, str, "[probe] [WARN")
 }
 
-// https://github.com/gookit/slog/issues/121
+// https://github.com/maintell/slog/issues/121
 // 当我配置按日期的方式来滚动日志时，当大于 1 天时只能按 1 天来滚动日志。
 func TestIssues_121(t *testing.T) {
 	seconds := timex.OneDaySec * 7 // 7天
@@ -162,7 +162,7 @@ func TestIssues_121(t *testing.T) {
 	l.MustClose()
 }
 
-// https://github.com/gookit/slog/issues/137
+// https://github.com/maintell/slog/issues/137
 // 按日期滚动 如果当天时间节点的日志文件已存在 不会append 会直接替换 #137
 func TestIssues_137(t *testing.T) {
 	logFile := "testdata/issue137_case1.log"
@@ -182,7 +182,7 @@ func TestIssues_137(t *testing.T) {
 	assert.StrContains(t, content, "log index=4")
 }
 
-// https://github.com/gookit/slog/issues/139
+// https://github.com/maintell/slog/issues/139
 // 自定义模板报 invalid memory address or nil pointer dereference #139
 func TestIssues_139(t *testing.T) {
 	myTemplate := "[{{datetime}}] [{{requestid}}] [{{level}}] {{message}}\n"
@@ -207,7 +207,7 @@ func TestIssues_139(t *testing.T) {
 	L.WithCtx(ctx).Info("test")
 }
 
-// https://github.com/gookit/slog/issues/144
+// https://github.com/maintell/slog/issues/144
 // slog: failed to handle log, error: write ./logs/info.log: file already closed #144
 func TestIssues_144(t *testing.T) {
 	defer slog.MustClose()
@@ -230,7 +230,7 @@ func TestIssues_144(t *testing.T) {
 	slog.Error("error message text")
 }
 
-// https://github.com/gookit/slog/issues/161 自定义level、caller的宽度
+// https://github.com/maintell/slog/issues/161 自定义level、caller的宽度
 func TestIssues_161(t *testing.T) {
 	// 这样是全局影响的 - 不推荐
 	// slog.LevelNames[slog.WarnLevel] = "WARNI"
@@ -251,7 +251,7 @@ func TestIssues_161(t *testing.T) {
 	assert.NoErr(t, l.LastErr())
 }
 
-// https://github.com/gookit/slog/issues/163
+// https://github.com/maintell/slog/issues/163
 func TestIssues_163(t *testing.T) {
 	h, e := handler.NewRotateFile("testdata/app_iss163.log", rotatefile.EveryDay)
 	assert.NoError(t, e)

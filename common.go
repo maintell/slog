@@ -106,19 +106,19 @@ const (
 	// eg: "logger_test.go:48,TestLogger_ReportCaller"
 	CallerFlagFnlFcn CallerFlagMode = iota
 	// CallerFlagFull full func name with filename and with line.
-	// eg: "github.com/gookit/slog_test.TestLogger_ReportCaller(),logger_test.go:48"
+	// eg: "github.com/maintell/slog_test.TestLogger_ReportCaller(),logger_test.go:48"
 	CallerFlagFull
 	// CallerFlagFunc full package with func name.
-	// eg: "github.com/gookit/slog_test.TestLogger_ReportCaller"
+	// eg: "github.com/maintell/slog_test.TestLogger_ReportCaller"
 	CallerFlagFunc
 	// CallerFlagFcLine full package with func name and with line.
-	// eg: "github.com/gookit/slog_test.TestLogger_ReportCaller:48"
+	// eg: "github.com/maintell/slog_test.TestLogger_ReportCaller:48"
 	CallerFlagFcLine
 	// CallerFlagPkg report full package name.
-	// eg: "github.com/gookit/slog_test"
+	// eg: "github.com/maintell/slog_test"
 	CallerFlagPkg
 	// CallerFlagPkgFnl report full package name + filename + line.
-	// eg: "github.com/gookit/slog_test,logger_test.go:48"
+	// eg: "github.com/maintell/slog_test,logger_test.go:48"
 	CallerFlagPkgFnl
 	// CallerFlagFpLine report full filepath with line.
 	// eg: "/work/go/gookit/slog/logger_test.go:48"

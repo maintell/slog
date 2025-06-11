@@ -12,7 +12,7 @@ import (
 	"github.com/gookit/goutil/fsutil"
 	"github.com/gookit/goutil/testutil/assert"
 	"github.com/gookit/goutil/timex"
-	"github.com/gookit/slog/rotatefile"
+	"github.com/maintell/slog/rotatefile"
 )
 
 func TestFilesClear_Clean(t *testing.T) {

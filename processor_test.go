@@ -8,7 +8,7 @@ import (
 
 	"github.com/gookit/goutil/byteutil"
 	"github.com/gookit/goutil/testutil/assert"
-	"github.com/gookit/slog"
+	"github.com/maintell/slog"
 )
 
 func TestLogger_AddProcessor(t *testing.T) {

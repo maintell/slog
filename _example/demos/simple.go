@@ -1,6 +1,6 @@
 package main
 
-import "github.com/gookit/slog"
+import "github.com/maintell/slog"
 
 // profile run:
 //

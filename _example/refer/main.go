@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/golang/glog"
-	"github.com/gookit/slog"
+	"github.com/maintell/slog"
 	"github.com/sirupsen/logrus"
 
 	"github.com/syyongx/llog"

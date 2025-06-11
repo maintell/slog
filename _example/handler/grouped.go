@@ -1,6 +1,6 @@
 package handler
 
-import "github.com/gookit/slog"
+import "github.com/maintell/slog"
 
 /********************************************************************************
  * Grouped Handler

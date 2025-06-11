@@ -8,7 +8,7 @@ import (
 	"github.com/gookit/goutil/fmtutil"
 	"github.com/gookit/goutil/testutil/assert"
 	"github.com/gookit/goutil/timex"
-	"github.com/gookit/slog/rotatefile"
+	"github.com/maintell/slog/rotatefile"
 )
 
 func TestNewDefaultConfig(t *testing.T) {

@@ -12,8 +12,8 @@ import (
 	"github.com/gookit/goutil/errorx"
 	"github.com/gookit/goutil/testutil/assert"
 	"github.com/gookit/goutil/timex"
-	"github.com/gookit/slog"
-	"github.com/gookit/slog/handler"
+	"github.com/maintell/slog"
+	"github.com/maintell/slog/handler"
 )
 
 func TestRecord_AddData(t *testing.T) {
@@ -111,7 +111,7 @@ func TestRecord_SetContext(t *testing.T) {
 
 	s := w.StringReset()
 	fmt.Print(s)
-	assert.Contains(t, s, "github.com/gookit/slog_test")
+	assert.Contains(t, s, "github.com/maintell/slog_test")
 }
 
 func TestRecord_WithError(t *testing.T) {

@@ -6,7 +6,7 @@ import (
 
 	"github.com/gookit/goutil/errorx"
 	"github.com/gookit/goutil/testutil/assert"
-	"github.com/gookit/slog/bufwrite"
+	"github.com/maintell/slog/bufwrite"
 )
 
 func TestNewBufIOWriter_WriteString(t *testing.T) {

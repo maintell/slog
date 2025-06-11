@@ -8,9 +8,9 @@ import (
 	"github.com/gookit/goutil/fmtutil"
 	"github.com/gookit/goutil/fsutil"
 	"github.com/gookit/goutil/testutil/assert"
-	"github.com/gookit/slog"
-	"github.com/gookit/slog/handler"
-	"github.com/gookit/slog/rotatefile"
+	"github.com/maintell/slog"
+	"github.com/maintell/slog/handler"
+	"github.com/maintell/slog/rotatefile"
 )
 
 func TestNewConfig(t *testing.T) {

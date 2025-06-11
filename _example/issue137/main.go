@@ -5,9 +5,9 @@ import (
 	"path"
 	"time"
 
-	"github.com/gookit/slog"
-	"github.com/gookit/slog/handler"
-	"github.com/gookit/slog/rotatefile"
+	"github.com/maintell/slog"
+	"github.com/maintell/slog/handler"
+	"github.com/maintell/slog/rotatefile"
 )
 
 type GLogConfig137 struct {

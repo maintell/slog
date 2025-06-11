@@ -9,7 +9,7 @@ import (
 	"sync"
 
 	"github.com/gookit/goutil/fsutil"
-	"github.com/gookit/slog"
+	"github.com/maintell/slog"
 )
 
 // DefaultBufferSize sizes the buffer associated with each log file. It's large

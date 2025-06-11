@@ -7,11 +7,11 @@ import (
 	"github.com/gookit/goutil/fsutil"
 	"github.com/gookit/goutil/mathutil"
 	"github.com/gookit/goutil/testutil/assert"
-	"github.com/gookit/slog/internal"
-	"github.com/gookit/slog/rotatefile"
+	"github.com/maintell/slog/internal"
+	"github.com/maintell/slog/rotatefile"
 )
 
-// https://github.com/gookit/slog/issues/138
+// https://github.com/maintell/slog/issues/138
 // 日志按everyday自动滚动，文件名的日期对应的是前一天的日志 #138
 func TestIssues_138(t *testing.T) {
 	logfile := "testdata/iss138_rotate_day.log"
@@ -51,7 +51,7 @@ func TestIssues_138(t *testing.T) {
 	assert.StrContains(t, s, "2023-11-16 23:")
 }
 
-// https://github.com/gookit/slog/issues/150
+// https://github.com/maintell/slog/issues/150
 // 日志轮转时间设置为分钟时，FirstCheckTime计算单位错误，导致生成预期外的多个日志文件 #150
 func TestIssues_150(t *testing.T) {
 	logfile := "testdata/iss150_rotate_min.log"

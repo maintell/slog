@@ -7,7 +7,7 @@ import (
 	"testing"
 
 	"github.com/gookit/goutil/testutil/assert"
-	"github.com/gookit/slog/handler"
+	"github.com/maintell/slog/handler"
 )
 
 func TestNewSysLogHandler(t *testing.T) {

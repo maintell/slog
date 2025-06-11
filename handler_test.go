@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/gookit/goutil/testutil/assert"
-	"github.com/gookit/slog"
+	"github.com/maintell/slog"
 )
 
 func TestNewLvFormatter(t *testing.T) {

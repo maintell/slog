@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/gookit/goutil/fsutil"
-	"github.com/gookit/goutil/testutil/assert"
-	"github.com/gookit/goutil/testutil/fakeobj"
+	"github.com/maintell/goutil/fsutil"
+	"github.com/maintell/goutil/testutil/assert"
+	"github.com/maintell/goutil/testutil/fakeobj"
 	"github.com/maintell/slog"
 	"github.com/maintell/slog/handler"
 )

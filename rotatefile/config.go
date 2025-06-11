@@ -5,7 +5,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/gookit/goutil/timex"
+	"github.com/maintell/goutil/timex"
 )
 
 type rotateLevel uint8

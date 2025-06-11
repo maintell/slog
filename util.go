@@ -8,8 +8,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/gookit/goutil/byteutil"
-	"github.com/gookit/goutil/strutil"
+	"github.com/maintell/goutil/byteutil"
+	"github.com/maintell/goutil/strutil"
 	"github.com/valyala/bytebufferpool"
 )
 

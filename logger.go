@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/gookit/goutil"
+	"github.com/maintell/goutil"
 )
 
 // Logger log dispatcher definition.

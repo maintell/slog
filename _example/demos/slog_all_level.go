@@ -3,7 +3,7 @@ package main
 import (
 	"errors"
 
-	"github.com/gookit/goutil/errorx"
+	"github.com/maintell/goutil/errorx"
 	"github.com/maintell/slog"
 	"github.com/maintell/slog/handler"
 )

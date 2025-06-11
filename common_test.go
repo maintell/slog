@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/gookit/goutil/byteutil"
-	"github.com/gookit/goutil/dump"
-	"github.com/gookit/goutil/errorx"
-	"github.com/gookit/goutil/testutil/assert"
 	"github.com/gookit/gsr"
+	"github.com/maintell/goutil/byteutil"
+	"github.com/maintell/goutil/dump"
+	"github.com/maintell/goutil/errorx"
+	"github.com/maintell/goutil/testutil/assert"
 	"github.com/maintell/slog"
 	"github.com/maintell/slog/handler"
 )

@@ -4,7 +4,7 @@ import (
 	"io"
 	"testing"
 
-	"github.com/gookit/goutil/dump"
+	"github.com/maintell/goutil/dump"
 	"github.com/maintell/slog"
 	"github.com/maintell/slog/handler"
 )

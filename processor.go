@@ -6,7 +6,7 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/gookit/goutil/strutil"
+	"github.com/maintell/goutil/strutil"
 )
 
 //

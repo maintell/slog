@@ -7,11 +7,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gookit/goutil"
-	"github.com/gookit/goutil/dump"
-	"github.com/gookit/goutil/fsutil"
-	"github.com/gookit/goutil/testutil/assert"
-	"github.com/gookit/goutil/timex"
+	"github.com/maintell/goutil"
+	"github.com/maintell/goutil/dump"
+	"github.com/maintell/goutil/fsutil"
+	"github.com/maintell/goutil/testutil/assert"
+	"github.com/maintell/goutil/timex"
 	"github.com/maintell/slog/rotatefile"
 )
 

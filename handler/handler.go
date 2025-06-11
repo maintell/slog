@@ -8,7 +8,7 @@ import (
 	"os"
 	"sync"
 
-	"github.com/gookit/goutil/fsutil"
+	"github.com/maintell/goutil/fsutil"
 	"github.com/maintell/slog"
 )
 

@@ -6,7 +6,7 @@ import (
 	"log/syslog"
 	"testing"
 
-	"github.com/gookit/goutil/testutil/assert"
+	"github.com/maintell/goutil/testutil/assert"
 	"github.com/maintell/slog/handler"
 )
 

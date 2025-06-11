@@ -4,10 +4,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gookit/goutil/dump"
-	"github.com/gookit/goutil/fmtutil"
-	"github.com/gookit/goutil/testutil/assert"
-	"github.com/gookit/goutil/timex"
+	"github.com/maintell/goutil/dump"
+	"github.com/maintell/goutil/fmtutil"
+	"github.com/maintell/goutil/testutil/assert"
+	"github.com/maintell/goutil/timex"
 	"github.com/maintell/slog/rotatefile"
 )
 

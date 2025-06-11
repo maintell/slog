@@ -4,9 +4,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gookit/goutil/fsutil"
-	"github.com/gookit/goutil/mathutil"
-	"github.com/gookit/goutil/testutil/assert"
+	"github.com/maintell/goutil/fsutil"
+	"github.com/maintell/goutil/mathutil"
+	"github.com/maintell/goutil/testutil/assert"
 	"github.com/maintell/slog/internal"
 	"github.com/maintell/slog/rotatefile"
 )

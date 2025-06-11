@@ -5,8 +5,8 @@ import (
 	"log"
 	"testing"
 
-	"github.com/gookit/goutil"
-	"github.com/gookit/goutil/fsutil"
+	"github.com/maintell/goutil"
+	"github.com/maintell/goutil/fsutil"
 	"github.com/maintell/slog/rotatefile"
 )
 

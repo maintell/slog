@@ -8,9 +8,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/gookit/goutil"
-	"github.com/gookit/goutil/fsutil"
-	"github.com/gookit/goutil/timex"
+	"github.com/maintell/goutil"
+	"github.com/maintell/goutil/fsutil"
+	"github.com/maintell/goutil/timex"
 )
 
 const compressSuffix = ".gz"

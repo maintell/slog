@@ -5,7 +5,7 @@ import (
 	"io"
 	"testing"
 
-	"github.com/gookit/goutil/dump"
+	"github.com/maintell/goutil/dump"
 )
 
 func TestLogger_newRecord_AllocTimes(_ *testing.T) {

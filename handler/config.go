@@ -5,9 +5,9 @@ import (
 	"io/fs"
 	"strings"
 
-	"github.com/gookit/goutil/errorx"
-	"github.com/gookit/goutil/fsutil"
-	"github.com/gookit/goutil/timex"
+	"github.com/maintell/goutil/errorx"
+	"github.com/maintell/goutil/fsutil"
+	"github.com/maintell/goutil/timex"
 	"github.com/maintell/slog"
 	"github.com/maintell/slog/bufwrite"
 	"github.com/maintell/slog/rotatefile"

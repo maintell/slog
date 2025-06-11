@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/gookit/goutil/errorx"
-	"github.com/gookit/goutil/testutil/assert"
+	"github.com/maintell/goutil/errorx"
+	"github.com/maintell/goutil/testutil/assert"
 	"github.com/maintell/slog/bufwrite"
 )
 

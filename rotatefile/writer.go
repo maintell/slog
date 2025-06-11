@@ -11,11 +11,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/gookit/goutil/errorx"
-	"github.com/gookit/goutil/fsutil"
-	"github.com/gookit/goutil/mathutil"
-	"github.com/gookit/goutil/stdio"
-	"github.com/gookit/goutil/strutil"
+	"github.com/maintell/goutil/errorx"
+	"github.com/maintell/goutil/fsutil"
+	"github.com/maintell/goutil/mathutil"
+	"github.com/maintell/goutil/stdio"
+	"github.com/maintell/goutil/strutil"
 )
 
 // Writer a flush, close, writer and support rotate file.

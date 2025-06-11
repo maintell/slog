@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/gookit/goutil"
-	"github.com/gookit/goutil/errorx"
-	"github.com/gookit/goutil/fsutil"
-	"github.com/gookit/goutil/testutil/assert"
+	"github.com/maintell/goutil"
+	"github.com/maintell/goutil/errorx"
+	"github.com/maintell/goutil/fsutil"
+	"github.com/maintell/goutil/testutil/assert"
 	"github.com/maintell/slog"
 	"github.com/maintell/slog/handler"
 )

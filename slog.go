@@ -28,8 +28,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/gookit/goutil"
 	"github.com/gookit/gsr"
+	"github.com/maintell/goutil"
 )
 
 // SLogger interface

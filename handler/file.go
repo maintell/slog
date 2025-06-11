@@ -1,7 +1,7 @@
 package handler
 
 import (
-	"github.com/gookit/goutil/basefn"
+	"github.com/maintell/goutil/basefn"
 	"github.com/maintell/slog"
 )
 

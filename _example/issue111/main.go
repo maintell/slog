@@ -5,8 +5,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/gookit/goutil/syncs"
-	"github.com/gookit/goutil/timex"
+	"github.com/maintell/goutil/syncs"
+	"github.com/maintell/goutil/timex"
 	"github.com/maintell/slog"
 	"github.com/maintell/slog/handler"
 	"github.com/maintell/slog/rotatefile"

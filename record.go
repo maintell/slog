@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/gookit/goutil/strutil"
+	"github.com/maintell/goutil/strutil"
 )
 
 // Record a log record definition

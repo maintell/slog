@@ -5,8 +5,8 @@ import (
 	"sort"
 	"time"
 
-	"github.com/gookit/goutil/errorx"
-	"github.com/gookit/goutil/fsutil"
+	"github.com/maintell/goutil/errorx"
+	"github.com/maintell/goutil/fsutil"
 )
 
 const defaultCheckInterval = 60 * time.Second

@@ -5,7 +5,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/gookit/goutil/envutil"
+	"github.com/maintell/goutil/envutil"
 )
 
 //
